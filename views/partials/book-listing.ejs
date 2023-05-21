@@ -1,0 +1,22 @@
+<% for (adminBook of adminData) { %>
+    <tr>
+     
+       <td><%= adminBook.title %></td>
+
+       <td>
+          <button type="submit" name ="edit" ><a class="edit-link" href ="./admin-console/update-book/<%= adminBook._id %>">EDIT</a></button>
+          
+         
+       </td>
+
+       <td>
+         <form action ="/books/<%= adminBook._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded">
+            <button type="submit" name ="delete" >DELETE</button>
+         </form>
+       </td>
+      
+    </tr>
+
+     <%  } %>
+
+     

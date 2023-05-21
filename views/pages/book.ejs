@@ -1,0 +1,31 @@
+
+<%- include ('../partials/head') -%>
+
+<%- include ('../partials/nav') -%>
+     
+<div class="background-page">
+
+     <div class ="comic-card-content">
+
+         <div class="top-section"> 
+               <h3><%= foundBook.title %></h2> 
+               <div class="img-comic"> 
+                  <img  src="/images/<%= foundBook.image %>" alt="one-piece-picture">
+               </div> 
+         </div>
+
+         <div class="bottom-section">
+              <p><span>Title:</span><em><%= foundBook.title %></em></p>
+              <p><span>Author:</span> <%= foundBook.author %></p>
+              <p><span>Publisher:</span> <%= foundBook.publisher %></p>
+              <p><span>Genre:</span> <%= foundBook.genre %></p>
+              <p><span>Number of pages:</span> <%= foundBook.pages %></p>
+              <p><span>Rating:</span> <%= foundBook.rating %></p>
+              <p><span>Synopsis:</span> <%= foundBook.synopsis %></p>
+         </div>
+
+
+     </div>
+</div>
+
+<%- include ('../partials/footer') -%>

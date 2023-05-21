@@ -1,0 +1,35 @@
+<%- include('../partials/head') -%>
+
+ 
+<%- include('../partials/nav') -%>
+
+<main>
+   
+  <div class="background-page">
+
+    <div class="login-content">
+
+        <h1>Register</h1>
+
+        <form action="/register" method="POST">
+        
+              <label for="username">Username: </label>
+              <input type="text" name="username" id="username" required />
+          
+          
+              <label for="password">Password: </label>
+              <input type="password" name="password" id="password" required />
+               
+              <input class="submit-input" type="submit" value="Submit"/>
+
+              <p class="regis-google"><a href="/auth/google">Sign Up with Google</a></p>
+             
+            
+          </div>
+         
+        </form>
+ 
+ </div>
+ </div>
+
+<%- include('../partials/footer') -%>

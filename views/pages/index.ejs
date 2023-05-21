@@ -1,0 +1,96 @@
+<%- include('../partials/head') -%>
+
+
+ 
+<%- include('../partials/nav') -%>
+
+
+<div class="background-page">
+     <div class="main-content">
+<h1>CODESQUAD COMICS</h1>
+<p>CodeSquad Comics is a collection of graphic novels read by YOUR NAME. The site is intended to display comic
+     book covers along with information about each book, including the author, a rating, and other details about the graphic novel. 
+     Browse through the complete collection below. Click on the cover image or the Details link to see even more information 
+     for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes meta 
+     information about this collection. Login is only available to the site administrator at this time.</p>     
+    </div>
+
+
+    <div class="main-content2">
+<h2>COMPLETE COMIC COLLECTION</h2>
+
+<div class="book-details">
+
+<% for (book of bookData) { %>
+<div class="comic-individual">  
+     <a href="./books/<%= book._id %>"><img src="./images/<%= book.image %>" alt="fun home"></a>
+     <p><i><%= book.title %></i><br>by <%= book.author %><br><%= book.rating %> stars<br><a href="./books/<%= book._id %>" class="detail-link" >Details</a></p>    
+</div>
+
+<%  } %>
+
+ <!-- <div class="comic-individual"> 
+<a href="#"><img src="./images/watchmen.jpg" alt="Watchmen"></a>
+<p><i>Watchmen</i><br>by Alan Moore<br>5 stars<br><a href="#"class="detail-link">Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img src="./images/hunter-x-hunter.jpg" alt="hunter-x"></a>
+<p><i>hunter X Hunter Vol.1</i><br>by Yoshihiro Togashi<br>5 stars<br><a href="#" class="detail-link">Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img src="./images/lumberjanes.jpg" alt="lumberjanes"></a>
+<p><i>Lumberjeanes Vol.1</i><br>by Noelle Stevenson<br>4 stars<br><a href="#" class="detail-link" >Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="book"><img  src="./images/one-piece.jpg" alt="one Piece"></a>
+<p><i>One Piece, Vol.1: Romance Dawn</i><br>by Eiichiro<br>5 stars<br><a href="book" class="detail-link">Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img  src="./images/wake.jpg" alt="wake"></a>
+<p><i>Wake: The Hidden History of Woman-Led Slave Revolts</i><br>by Rebbecca Hall<br>4 stars<br><a href="#" class="detail-link" >Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img  src="./images/black-panther.jpg" alt="black panther"></a>
+<p><i>Black Panther: A Nation Under Our Feet Book 1</i><br>by Ta-Nehisi Coates<br>3 stars<br><a href="#" class="detail-link">Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img  src="./images/the-walking-dead.jpg" alt="the walking dead"></a>
+<p><i>The Walking Dead, Vol. 1: Days Gone Bye</i><br>by Robert Kirkman<br>4 stars<br><a href="#" class="detail-link" >Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img src="./images/march.jpg" alt="march"></a>
+<p><i>March: Book One</i><br>by John Lewis<br>5 stars<br><a href="#" class="detail-link" >Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img  src="./images/batman.jpg" alt="batman"></a>
+<p><i>Batman: The Dark Knight Returns</i><br>by Frank Miller<br>3 stars<br><a href="#" class="detail-link">Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img src="./images/queer.jpg" alt="queer"></a>
+<p><i>Queer: A Graphic History</i><br>by Meg-John Barker<br>4 stars<br><a href="#" class="detail-link">Details</a></p>
+</div>
+
+<div class="comic-individual"> 
+<a href="#"><img  src="./images/parable-of-the-sower.jpg" alt="parable"></a>
+<p><i>Parable of the sower</i><br>by Octavia E. Butler<br>4 stars<br><a href="#" class="detail-link" >Details</a></p>
+</div> -->
+
+</div>
+ 
+<div class="main-content2-button">
+<button>DISPLAY MORE</button>
+</div>
+
+</div>
+</div>
+
+<%- include('../partials/footer') -%>
