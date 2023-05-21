@@ -364,6 +364,10 @@ form label{
 
    }
 
+   .login-content a:visited{
+    color: var(--blue);
+   }
+
 .login-content .submit-input {
     background-color: var(--yellow);
     color: var(--blue);
