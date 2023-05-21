@@ -1,4 +1,6 @@
 const { v4:uuid } = require('uuid');
+//should set in the data base in order when you insertMany 
+//export and import(into mongoDB) in the cd Desktop
 
 module.exports = [
   {  
