@@ -10,8 +10,9 @@
 
 <form action="/books" method="POST">
 
-<label for="image"></label>   <!--temporarily handle images -->
-<input type="text" name="image" id="image"  placeholder="Image">
+<label for="image"></label>  
+<input type="file" name="image" id="image"  accept="image/png, image/jpeg" >
+
 
 <label for="title">Title:</label>
 <input type="text" name="title" id="title"  placeholder="Tittle" required>
