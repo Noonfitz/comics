@@ -4,8 +4,8 @@
   "description": "bookStore",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
     "start": "node app.js"
   },
   "repository": {
@@ -25,17 +25,15 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "method-override": "^3.0.0",
-    "mongodb": "^5.5.0",
     "mongoose": "^6.3.0",
     "mongoose-findorcreate": "^4.0.0",
     "mongoose-morgan": "^1.0.17",
-    "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-local-mongoose": "^8.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22",
-    "uuid": "^9.0.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
   }
 }
