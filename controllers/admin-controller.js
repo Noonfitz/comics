@@ -1,5 +1,5 @@
 const Comic = require('../models/comic-model')
-const data =require('../data/data')
+// const data =require('../data/data')
 
 
 module.exports = {
