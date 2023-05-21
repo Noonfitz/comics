@@ -44,7 +44,7 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-   callbackURL: "http://localhost:3000/auth/google/admin-console",
+   callbackURL: "https://drab-puce-slug-gear.cyclic.app/auth/google/admin-console",
   //it has to match with Authorized redirect URIs on the google console
 
 },
