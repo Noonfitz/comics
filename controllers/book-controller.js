@@ -51,7 +51,7 @@ module.exports = {
       author: author,
       publisher: publisher,
       genre: genre,
-      pages: numpages,
+      pages: numpages,  //it's really important that the name in ejs page match with the this key value
       rating: rating,
       synopsis: synopsis,
       image: image
