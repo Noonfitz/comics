@@ -17,13 +17,14 @@ module.exports = {
   },
 
   create: (request, response) => {
-    const { image, title, author, publisher, genre, pages, rating,synopsis} = request.body;
+    console.log("body: ", request.body);
+    const { image, title, author, publisher, genre, numpages, rating,synopsis} = request.body;
     const newBook = new Comic ({
       title: title,
       author: author,
       publisher: publisher,
       genre:genre,
-      pages:pages,
+      pages:numpages,
       rating: rating,
       synopsis: synopsis,
       image:image
@@ -42,14 +43,15 @@ module.exports = {
 
   update: (request, response) => {
     const {_id} = request.params
-    const { image, title, author, publisher, genre, pages, rating,synopsis} = request.body;
+    console.log("body: ", request.body);
+    const { image, title, author, publisher, genre, numpages, rating,synopsis} = request.body;
 
     Comic.findByIdAndUpdate(_id, {$set: {
       title :title,
       author: author,
       publisher: publisher,
       genre: genre,
-      pages: pages,
+      pages: numpages,
       rating: rating,
       synopsis: synopsis,
       image: image
